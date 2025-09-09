@@ -1,0 +1,57 @@
+Name                    		Purpose                                    	 Java pattern of principle included
+spaceInvader.java 			initializing and launching game frame			Singleton pattern
+
+CollisionHandler.java			Abstract class to handle collision logic		chain of responsibility pattern
+
+
+MonsterBulletCollisionHandler.java	Handle collision detection for monster projectiles	chain of responsibility pattern
+					and apply effect on player when hit
+
+PlayerBulletCollisionHandler.java	Handle collision detection between player projectile	chain of responsibility pattern
+					and monsters, updating monster status and player score
+
+Entity.java				Represent a base entity class				encapsulation principle
+
+Monster.java				Manage monster behaviors 				factory method pattern and encapsulation 
+
+MonsterAnimation.java			Manage animation states for monsters			encapsulation principle
+
+MonsterProjectile.java 			Manage monsters projectiles				encapsulation principle
+
+Player.java				Manage player's interactions with the game		encapsulation principle
+
+PlayerDefaultValue.java			Store default configuration value for player		Constant pattern
+
+PlayerRender.java			Handles rendering player's related stuff such as	Separation of concerns principle
+
+					image, projectiles, health
+
+Projectile.java				Store projectile properties				Encapsulation principle
+
+GameFrame.java				Setup and display main window				Observer pattern and MVC
+
+GameLoop.java				Implements the game loop logic				Game Loop design pattern
+
+GameOver.java				Handle game over logic					Conditional logic and exit principle
+
+GamePanel.java				Manage the game primary Ui, game state, collision	MVC pattern, chain of responsibility pattern
+					handling and updates.			
+
+GameRestart.java			Handle game restart logic				Command pattern
+
+GameStatusManage.java			Manage current game state				State pattern
+
+KeyHandling.java			Handle key press and release event			Observer pattern
+
+PauseGame.java				Manage temporarily pause on game			Timer pattern
+
+Renderer.java				Handles rendering of various game screens		Separation of concerns principle
+
+playStateHandler.java  			Handles the logic for transitioning and managing the    State pattern
+                         		play state of the game
+
+stateHandler.java 			Abstract class that defines the structure for handling  Chain of Responsibility pattern
+                    			different game states
+
+TitleStateHandler.java			Handles the logic for transitioning from the 		State pattern
+					title screen 
