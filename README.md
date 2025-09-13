@@ -42,7 +42,7 @@ Step 2: cd spaceInvader
 
 Step 3: Compile the source code
 
-Step 4: Run the GamePanel
+Step 4: Run the GameFrame java file
 
 
 
